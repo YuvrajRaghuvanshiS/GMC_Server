@@ -15,11 +15,12 @@ _user_data_parser.add_argument(
 class UserData(Resource):
     def post(self):
         data = _user_data_parser.parse_args()
+        data['response'] = json.loads(data["response"])
         try:
             with open("data.json", "w") as outfile:
                 json.dump(data, outfile, indent=4)
 
-            print(json.loads(data["response"]))
             return data, 200
-        except:
-            return {"message": "error"}, 500
+        except Exception as e:
+            return {"message": f"error {e}"}, 500
+            # FIXME: Exception e is an object, might not be a good idea to use in f-string as is.
