@@ -1,6 +1,31 @@
-# Instructions
- ## On cmd.
- - venv\Scripts\activate
- - python code\app.py
+**The requirement for database like SQLAlchemy are in initial commit**
 
-Server must have been started.
+### Data Received (saved to data.json)
+
+```
+{
+    "enr_id": "YUVRAJ RAGHUVANSHI (C000B00)",
+    "response": [
+        {
+            "qNo": 1,
+            "yourAns": "C",
+            "qType": "MCQ"
+        },
+        {
+            "qNo": 52,
+            "yourAns": "--",
+            "qType": "MSQ"
+        },
+        {
+            "qNo": 53,
+            "yourAns": "C;D",
+            "qType": "MSQ"
+        },
+        {
+            "qNo": 64,
+            "yourAns": "19",
+            "qType": "NAT"
+        }
+    ]
+}
+```

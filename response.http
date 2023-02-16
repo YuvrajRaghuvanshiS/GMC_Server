@@ -2,6 +2,13 @@ POST http://127.0.0.1:5000/user-data
 Content-Type: application/json
 
 {
-    "enr_id":"abc123", 
-    "response":"{\"1\": \"A\", \"2\": \"A;B;C\", \"3\" : \"3\"}"
+    "enr_id":"YUVRAJ RAGHUVANSHI (C000B00)",
+    "response":"[
+        {\"qNo\":1,\"yourAns\":\"B\",\"qType\":\"MCQ\"},
+        {\"qNo\":2,\"yourAns\":\"D\",\"qType\":\"MCQ\"},
+        {\"qNo\":3,\"yourAns\":\"A\",\"qType\":\"MCQ\"},
+        {\"qNo\":4,\"yourAns\":\"A\",\"qType\":\"MCQ\"},
+        {\"qNo\":5,\"yourAns\":\"B\",\"qType\":\"MCQ\"},
+        {\"qNo\":6,\"yourAns\":\"--\",\"qType\":\"MCQ\"}
+        ]"
 }
